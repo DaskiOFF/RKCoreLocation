@@ -1,6 +1,306 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 3,
+      "symbol": "ServiceLocationAccuracy",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 4,
+      "symbol": "ServiceLocationAccuracy.best",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 4,
+      "symbol": "ServiceLocationAccuracy.bestForNavigation",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 4,
+      "symbol": "ServiceLocationAccuracy.hundredMeters",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 4,
+      "symbol": "ServiceLocationAccuracy.kilometer",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 4,
+      "symbol": "ServiceLocationAccuracy.nearestTenMeters",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 4,
+      "symbol": "ServiceLocationAccuracy.threeKilometers",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 6,
+      "symbol": "ServiceLocationAccuracy.rawValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 24,
+      "symbol": "ServiceLocationAuthorizationStatus",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 25,
+      "symbol": "ServiceLocationAuthorizationStatus.authorizedAlways",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 26,
+      "symbol": "ServiceLocationAuthorizationStatus.authorizedWhenInUse",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 27,
+      "symbol": "ServiceLocationAuthorizationStatus.notDetermined",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 28,
+      "symbol": "ServiceLocationAuthorizationStatus.denied",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 31,
+      "symbol": "RequestType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 32,
+      "symbol": "RequestType.alwaysAuth",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 32,
+      "symbol": "RequestType.whenInUseAuth",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 35,
+      "symbol": "ServiceLocation",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 37,
+      "symbol": "ServiceLocation.DidChangeAuthorizationStatus",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 38,
+      "symbol": "ServiceLocation.DidUpdateLocation",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 39,
+      "symbol": "ServiceLocation.Seconds",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 40,
+      "symbol": "ServiceLocation.BlockCompletion",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 43,
+      "symbol": "ServiceLocation.setDidChangeAuthorizationStatus(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 44,
+      "symbol": "ServiceLocation.setDidUpdateLocation(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 47,
+      "symbol": "ServiceLocation.requestAuth(requestType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 48,
+      "symbol": "ServiceLocation.requestAuth(requestType:accuracy:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 51,
+      "symbol": "ServiceLocation.set(accuracy:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 54,
+      "symbol": "ServiceLocation.getLastPosition(timeout:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 57,
+      "symbol": "ServiceLocation.startUpdating()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocation.swift",
+      "line": 58,
+      "symbol": "ServiceLocation.stopUpdating()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocationDefault.swift",
+      "line": null,
+      "symbol": "ServiceLocationDefault",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocationDefault.swift",
+      "line": 4,
+      "symbol": "ServiceLocationDefault",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocationDefault.swift",
+      "line": 16,
+      "symbol": "ServiceLocationDefault.setDidChangeAuthorizationStatus(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocationDefault.swift",
+      "line": 20,
+      "symbol": "ServiceLocationDefault.setDidUpdateLocation(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocationDefault.swift",
+      "line": 25,
+      "symbol": "ServiceLocationDefault.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocationDefault.swift",
+      "line": 31,
+      "symbol": "ServiceLocationDefault.requestAuth(requestType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocationDefault.swift",
+      "line": 35,
+      "symbol": "ServiceLocationDefault.requestAuth(requestType:accuracy:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocationDefault.swift",
+      "line": 48,
+      "symbol": "ServiceLocationDefault.set(accuracy:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocationDefault.swift",
+      "line": 52,
+      "symbol": "ServiceLocationDefault.getLastPosition(timeout:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocationDefault.swift",
+      "line": 67,
+      "symbol": "ServiceLocationDefault.startUpdating()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocationDefault.swift",
+      "line": 71,
+      "symbol": "ServiceLocationDefault.stopUpdating()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocationDefault.swift",
+      "line": 78,
+      "symbol": "ServiceLocationDefault.locationManager(_:didUpdateLocations:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocationDefault.swift",
+      "line": 91,
+      "symbol": "ServiceLocationDefault.locationManager(_:didFailWithError:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation/Sources/ServiceLocationDefault.swift",
+      "line": 95,
+      "symbol": "ServiceLocationDefault.locationManager(_:didChangeAuthorization:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
   ],
   "source_directory": "/Users/daskioff/Dropbox/work/MyProjects/iOS/_pods/RKCoreLocation"
 }

@@ -1,11 +1,7 @@
 import Foundation
 import CoreLocation
 
-enum RequestType {
-    case whenInUseAuth, alwaysAuth
-}
-
-class ServiceLocationDefault: NSObject, ServiceLocation, CLLocationManagerDelegate {
+public class ServiceLocationDefault: NSObject, ServiceLocation {
     // MARK: - Properties
     private let locationManager = CLLocationManager()
     private let updQueue = DispatchQueue(label: "com.waydeveloper.serviceLocation")
@@ -17,26 +13,26 @@ class ServiceLocationDefault: NSObject, ServiceLocation, CLLocationManagerDelega
     private var workItemLastLocation: DispatchWorkItem?
 
     // MARK: - Setters
-    func setDidChangeAuthorizationStatus(_ block: DidChangeAuthorizationStatus?) {
+    public func setDidChangeAuthorizationStatus(_ block: DidChangeAuthorizationStatus?) {
         didChangeAuthorizationStatus = block
     }
 
-    func setDidUpdateLocation(_ block: DidUpdateLocation?) {
+    public func setDidUpdateLocation(_ block: DidUpdateLocation?) {
         didUpdateLocation = block
     }
 
     // MARK: - Init
-    override init() {
+    public override init() {
         super.init()
         locationManager.delegate = self
     }
 
     // MARK: - Request
-    func requestAuth(requestType: RequestType) {
+    public func requestAuth(requestType: RequestType) {
         requestAuth(requestType: requestType, accuracy: .kilometer)
     }
 
-    func requestAuth(requestType: RequestType, accuracy: ServiceLocationAccuracy) {
+    public func requestAuth(requestType: RequestType, accuracy: ServiceLocationAccuracy) {
         guard CLLocationManager.authorizationStatus() == .notDetermined else { return }
 
         switch requestType {
@@ -49,11 +45,11 @@ class ServiceLocationDefault: NSObject, ServiceLocation, CLLocationManagerDelega
         locationManager.desiredAccuracy = accuracy.rawValue
     }
 
-    func set(accuracy: ServiceLocationAccuracy) {
+    public func set(accuracy: ServiceLocationAccuracy) {
         locationManager.desiredAccuracy = accuracy.rawValue
     }
 
-    func getLastPosition(timeout: ServiceLocation.Seconds,
+    public func getLastPosition(timeout: ServiceLocation.Seconds,
                          completion: @escaping ServiceLocation.BlockCompletion) {
         workItemLastLocation = DispatchWorkItem(block: { [weak self] in
             DispatchQueue.main.async { [weak self] in
@@ -68,16 +64,18 @@ class ServiceLocationDefault: NSObject, ServiceLocation, CLLocationManagerDelega
         locationManager.requestLocation()
     }
 
-    func startUpdating() {
+    public func startUpdating() {
         locationManager.startUpdatingLocation()
     }
 
-    func stopUpdating() {
+    public func stopUpdating() {
         locationManager.stopUpdatingLocation()
     }
+}
 
-    // MARK: - CLLocationManagerDelegate
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+// MARK: - CLLocationManagerDelegate
+extension ServiceLocationDefault: CLLocationManagerDelegate {
+    public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let position = locations.last else { return }
 
         lastPosition = position
@@ -90,11 +88,11 @@ class ServiceLocationDefault: NSObject, ServiceLocation, CLLocationManagerDelega
         }
     }
 
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+    public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("LocationManager did fail with error: \(error)")
     }
 
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+    public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         let outputStatus: ServiceLocationAuthorizationStatus
         switch status {
         case .authorizedAlways:

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RKCoreLocation'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Easy Core Location'
 
 # This description is used to generate tags and improve search results.
@@ -20,6 +20,9 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
   Easy Core Location
   
+  0.1.1
+    Update
+
   0.1.0
     Init
                        DESC

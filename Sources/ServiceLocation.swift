@@ -1,9 +1,9 @@
 import CoreLocation
 
-enum ServiceLocationAccuracy {
+public enum ServiceLocationAccuracy {
     case bestForNavigation, best, nearestTenMeters, hundredMeters, kilometer, threeKilometers
 
-    var rawValue: Double {
+    public var rawValue: Double {
         switch self {
         case .bestForNavigation:
             return kCLLocationAccuracyBestForNavigation
@@ -21,14 +21,18 @@ enum ServiceLocationAccuracy {
     }
 }
 
-enum ServiceLocationAuthorizationStatus {
+public enum ServiceLocationAuthorizationStatus {
     case authorizedAlways
     case authorizedWhenInUse
     case notDetermined
     case denied
 }
 
-protocol ServiceLocation {
+public enum RequestType {
+    case whenInUseAuth, alwaysAuth
+}
+
+public protocol ServiceLocation {
     // MARK: - Types
     typealias DidChangeAuthorizationStatus = (ServiceLocationAuthorizationStatus) -> Void
     typealias DidUpdateLocation = (CLLocation) -> Void
