@@ -1,0 +1,9 @@
+module: RKCoreLocation
+author: DaskiOFF
+author_url: http://t.me/daskioff
+github_url: https://github.com/DaskiOFF/RKCoreLocation
+clean: true
+
+copyright: '© 2018 [DaskiOFF](http://t.me/daskioff) under MIT License'
+
+swift_version: 4.1

@@ -1,0 +1,20 @@
+# references:
+# * https://www.objc.io/issues/6-build-tools/travis-ci/
+# * https://github.com/supermarin/xcpretty#usage
+
+os: "osx"
+osx_image: "xcode9.3"
+language: swift
+xcode_project: RKCoreLocation.xcodeproj # path to your xcodeproj folder
+xcode_scheme: RKCoreLocation
+
+# cache: cocoapods
+# podfile: Podfile
+# before_install:
+# - gem install cocoapods # Since Travis is not always on latest version
+# - pod update
+# - pod install
+
+script:
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -project RKCoreLocation.xcodeproj -scheme RKCoreLocationTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone 6,OS=11.3' | xcpretty
+- pod lib lint
