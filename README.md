@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/RKCoreLocation.svg?style=flat)](https://cocoapods.org/pods/RKCoreLocation)
 [![License](https://img.shields.io/cocoapods/l/RKCoreLocation.svg?style=flat)](https://cocoapods.org/pods/RKCoreLocation)
 [![Platform](https://img.shields.io/cocoapods/p/RKCoreLocation.svg?style=flat)](https://cocoapods.org/pods/RKCoreLocation)
+[![Swift Version](https://img.shields.io/badge/Swift-4.1-brightgreen.svg?style=flat)](https://developer.apple.com/swift)
 
 ## Documentations
 
